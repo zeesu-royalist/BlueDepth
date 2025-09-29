@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Depth</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -30,95 +34,107 @@
         </div>
     </nav>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <video class="hero-video" autoplay muted loop>
-        <source src="https://cdn.pixabay.com/video/2024/12/03/244754_large.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop poster="poster.jpg">
+            <source src="hero.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-    <div class="hero-content">
-        <h1>Protecting Our Blue Planet</h1>
-        <p>Join the global movement to conserve marine ecosystems, protect endangered species, and ensure sustainable oceans for future generations.</p>
-        <a href="#actions" class="cta-button">Start Making a Difference</a>
-    </div>
-</section>
-
-
-<!-- Statistics Section -->
-<section id="stats" class="section">
-    <h2 class="section-title">Ocean Crisis by Numbers</h2>
-    <div class="stats-grid">
-        <div class="stat-card fade-in" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqun_0s_el1vSMheIgVgT46sCssKsYHlJ49y6q9u_mwBSQ6JXyjbc9EwK2otoOnOYXLD8&usqp=CAU');">
-            <div class="stat-number" data-target="71">0</div>
-            <div class="stat-label">Percent of Earth covered by oceans</div>
+        <div class="hero-content">
+            <h1>Protecting Our Blue Planet</h1>
+            <p>Join the global movement to conserve marine ecosystems, protect endangered species, and ensure
+                sustainable oceans for future generations.</p>
+            <a href="#actions" class="cta-button">Start Making a Difference</a>
         </div>
-        <div class="stat-card fade-in" style="background-image: url('https://images.unsplash.com/photo-1670793749059-3979953fe86a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
-            <div class="stat-number" data-target="90">0</div>
-            <div class="stat-label">Percent of large fish populations depleted</div>
-        </div>
-        <div class="stat-card fade-in" style="background-image: url('https://images.unsplash.com/photo-1708864162641-c748729de0b3?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
-            <div class="stat-number" data-target="8">0</div>
-            <div class="stat-label">Million tons of plastic enter oceans yearly</div>
-        </div>
-        <div class="stat-card fade-in" style="background-image: url('https://images.unsplash.com/photo-1546026423-cc4642628d2b?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
-            <div class="stat-number" data-target="50">0</div>
-            <div class="stat-label">Percent of coral reefs at risk</div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
-<!-- Endangered Species Section -->
-<section id="species" class="section">
-    <h2 class="section-title">Endangered Marine Species</h2>
-    <div class="species-grid">
-        <div class="species-card fade-in">
-            <div class="species-image">
-                <video autoplay muted loop playsinline>
-                    <source src="https://cdn.pixabay.com/video/2023/01/22/147535-791696855_large.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+    <!-- Statistics Section -->
+    <section id="stats" class="section">
+        <h2 class="section-title">Ocean Crisis by Numbers</h2>
+        <div class="stats-grid">
+            <div class="stat-card fade-in"
+                style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqun_0s_el1vSMheIgVgT46sCssKsYHlJ49y6q9u_mwBSQ6JXyjbc9EwK2otoOnOYXLD8&usqp=CAU');">
+                <div class="stat-number" data-target="71">0</div>
+                <div class="stat-label">Percent of Earth covered by oceans</div>
             </div>
-            <div class="species-info">
-                <span class="species-status critical">Critically Endangered</span>
-                <h3>North Atlantic Right Whale</h3>
-                <p>Only ~340 individuals remain. Major threats include ship strikes, fishing gear entanglement, and habitat degradation due to climate change.</p>
-                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;" onclick="openSpeciesModal('whale')">Learn More</button>
+            <div class="stat-card fade-in"
+                style="background-image: url('https://images.unsplash.com/photo-1670793749059-3979953fe86a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="stat-number" data-target="90">0</div>
+                <div class="stat-label">Percent of large fish populations depleted</div>
+            </div>
+            <div class="stat-card fade-in"
+                style="background-image: url('https://images.unsplash.com/photo-1708864162641-c748729de0b3?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="stat-number" data-target="8">0</div>
+                <div class="stat-label">Million tons of plastic enter oceans yearly</div>
+            </div>
+            <div class="stat-card fade-in"
+                style="background-image: url('https://images.unsplash.com/photo-1546026423-cc4642628d2b?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Percent of coral reefs at risk</div>
             </div>
         </div>
+    </section>
 
-        <div class="species-card fade-in">
-            <div class="species-image">
-                <video autoplay muted loop playsinline>
-                    <source src="https://cdn.pixabay.com/video/2025/04/21/273306_large.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+
+    <!-- Endangered Species Section -->
+    <section id="species" class="section">
+        <h2 class="section-title">Endangered Marine Species</h2>
+        <div class="species-grid">
+            <div class="species-card fade-in">
+                <div class="species-image">
+                    <video autoplay muted loop playsinline>
+                        <source src="https://cdn.pixabay.com/video/2023/01/22/147535-791696855_large.mp4"
+                            type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="species-info">
+                    <span class="species-status critical">Critically Endangered</span>
+                    <h3>North Atlantic Right Whale</h3>
+                    <p>Only ~340 individuals remain. Major threats include ship strikes, fishing gear entanglement, and
+                        habitat degradation due to climate change.</p>
+                    <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;"
+                        onclick="openSpeciesModal('whale')">Learn More</button>
+                </div>
             </div>
-            <div class="species-info">
-                <span class="species-status endangered">Endangered</span>
-                <h3>Hawksbill Sea Turtle</h3>
-                <p>Population has declined by 80% over three generations. Threatened by illegal trade, coastal development, and plastic pollution.</p>
-                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;" onclick="openSpeciesModal('turtle')">Learn More</button>
+
+            <div class="species-card fade-in">
+                <div class="species-image">
+                    <video autoplay muted loop playsinline>
+                        <source src="https://cdn.pixabay.com/video/2025/04/21/273306_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="species-info">
+                    <span class="species-status endangered">Endangered</span>
+                    <h3>Hawksbill Sea Turtle</h3>
+                    <p>Population has declined by 80% over three generations. Threatened by illegal trade, coastal
+                        development, and plastic pollution.</p>
+                    <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;"
+                        onclick="openSpeciesModal('turtle')">Learn More</button>
+                </div>
+            </div>
+
+            <div class="species-card fade-in">
+                <div class="species-image">
+                    <video autoplay muted loop playsinline>
+                        <source src="https://cdn.pixabay.com/video/2024/04/18/208492_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="species-info">
+                    <span class="species-status vulnerable">Vulnerable</span>
+                    <h3>Great White Shark</h3>
+                    <p>Populations have declined significantly due to overfishing, bycatch, and habitat loss. Essential
+                        for marine ecosystem balance.</p>
+                    <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;"
+                        onclick="openSpeciesModal('shark')">Learn More</button>
+                </div>
             </div>
         </div>
-
-        <div class="species-card fade-in">
-            <div class="species-image">
-                <video autoplay muted loop playsinline>
-                    <source src="https://cdn.pixabay.com/video/2024/04/18/208492_large.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="species-info">
-                <span class="species-status vulnerable">Vulnerable</span>
-                <h3>Great White Shark</h3>
-                <p>Populations have declined significantly due to overfishing, bycatch, and habitat loss. Essential for marine ecosystem balance.</p>
-                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;" onclick="openSpeciesModal('shark')">Learn More</button>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- Marine Ecosystems Section -->
@@ -126,26 +142,35 @@
         <h2 class="section-title">Vulnerable Marine Ecosystems</h2>
         <div class="ecosystem-grid">
             <div class="ecosystem-card fade-in">
-                <div class="ecosystem-image" style="background-image: url('https://images.unsplash.com/photo-1514907283155-ea5f4094c70c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+                <div class="ecosystem-image"
+                    style="background-image: url('https://images.unsplash.com/photo-1514907283155-ea5f4094c70c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                </div>
                 <div class="ecosystem-info">
                     <h3>Coral Reefs</h3>
-                    <p>Often called the "rainforests of the sea," coral reefs support approximately 25% of all marine species despite covering less than 1% of the ocean floor.</p>
+                    <p>Often called the "rainforests of the sea," coral reefs support approximately 25% of all marine
+                        species despite covering less than 1% of the ocean floor.</p>
                     <p><strong>Threats:</strong> Ocean warming, acidification, pollution, overfishing</p>
                 </div>
             </div>
             <div class="ecosystem-card fade-in">
-                <div class="ecosystem-image" style="background-image: url('https://plus.unsplash.com/premium_photo-1669822287809-ae9f10fe8b97?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+                <div class="ecosystem-image"
+                    style="background-image: url('https://plus.unsplash.com/premium_photo-1669822287809-ae9f10fe8b97?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                </div>
                 <div class="ecosystem-info">
                     <h3>Mangrove Forests</h3>
-                    <p>Mangroves provide crucial nursery habitats for many marine species and protect coastlines from erosion and storm surges.</p>
+                    <p>Mangroves provide crucial nursery habitats for many marine species and protect coastlines from
+                        erosion and storm surges.</p>
                     <p><strong>Threats:</strong> Coastal development, aquaculture, climate change</p>
                 </div>
             </div>
             <div class="ecosystem-card fade-in">
-                <div class="ecosystem-image" style="background-image: url('https://images.unsplash.com/photo-1745917784526-fbad88531db1?q=80&w=2058&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+                <div class="ecosystem-image"
+                    style="background-image: url('https://images.unsplash.com/photo-1745917784526-fbad88531db1?q=80&w=2058&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                </div>
                 <div class="ecosystem-info">
                     <h3>Kelp Forests</h3>
-                    <p>These underwater forests provide food and shelter for thousands of marine species and help mitigate climate change by absorbing CO₂.</p>
+                    <p>These underwater forests provide food and shelter for thousands of marine species and help
+                        mitigate climate change by absorbing CO₂.</p>
                     <p><strong>Threats:</strong> Warming waters, pollution, overgrazing by sea urchins</p>
                 </div>
             </div>
@@ -166,31 +191,43 @@
 
             <div id="epipelagic" class="layer-content active">
                 <h3>Epipelagic Zone (0-200m)</h3>
-                <p>This is the sunlit top layer of the ocean where most marine life lives. Photosynthesis occurs here, making it the foundation of most ocean food webs. Temperature ranges from near freezing to about 30°C (86°F).</p>
+                <p>This is the sunlit top layer of the ocean where most marine life lives. Photosynthesis occurs here,
+                    making it the foundation of most ocean food webs. Temperature ranges from near freezing to about
+                    30°C (86°F).</p>
                 <p><strong>Marine Life:</strong> Phytoplankton, zooplankton, most fish, sea turtles, marine mammals</p>
             </div>
 
             <div id="mesopelagic" class="layer-content">
                 <h3>Mesopelagic Zone (200-1000m)</h3>
-                <p>Also known as the twilight zone, this layer receives minimal sunlight. Many creatures here have evolved bioluminescence to communicate, find prey, and avoid predators. Pressure increases significantly with depth.</p>
-                <p><strong>Marine Life:</strong> Lanternfish, hatchetfish, viperfish, squid, and many bioluminescent species</p>
+                <p>Also known as the twilight zone, this layer receives minimal sunlight. Many creatures here have
+                    evolved bioluminescence to communicate, find prey, and avoid predators. Pressure increases
+                    significantly with depth.</p>
+                <p><strong>Marine Life:</strong> Lanternfish, hatchetfish, viperfish, squid, and many bioluminescent
+                    species</p>
             </div>
 
             <div id="bathypelagic" class="layer-content">
                 <h3>Bathypelagic Zone (1000-4000m)</h3>
-                <p>The midnight zone is completely dark except for the light produced by organisms themselves. The pressure is crushing, and temperatures are near freezing. Food is scarce, so many animals have large mouths and sharp teeth to capture any available prey.</p>
+                <p>The midnight zone is completely dark except for the light produced by organisms themselves. The
+                    pressure is crushing, and temperatures are near freezing. Food is scarce, so many animals have large
+                    mouths and sharp teeth to capture any available prey.</p>
                 <p><strong>Marine Life:</strong> Anglerfish, gulper eels, deep-sea jellyfish, and giant squid</p>
             </div>
 
             <div id="abyssopelagic" class="layer-content">
                 <h3>Abyssopelagic Zone (4000-6000m)</h3>
-                <p>The abyssal zone is characterized by near-freezing temperatures, extremely high pressure, and complete darkness. Despite harsh conditions, life persists around hydrothermal vents that provide chemical energy rather than sunlight-based energy.</p>
-                <p><strong>Marine Life:</strong> Deep-sea cucumbers, sea pigs, tripod fish, vent crabs, and tube worms</p>
+                <p>The abyssal zone is characterized by near-freezing temperatures, extremely high pressure, and
+                    complete darkness. Despite harsh conditions, life persists around hydrothermal vents that provide
+                    chemical energy rather than sunlight-based energy.</p>
+                <p><strong>Marine Life:</strong> Deep-sea cucumbers, sea pigs, tripod fish, vent crabs, and tube worms
+                </p>
             </div>
 
             <div id="hadalpelagic" class="layer-content">
                 <h3>Hadalpelagic Zone (6000m+)</h3>
-                <p>This zone includes the deepest ocean trenches. The pressure is over 1000 times standard atmospheric pressure at sea level. Life here is sparse but specialized, with organisms adapted to extreme conditions.</p>
+                <p>This zone includes the deepest ocean trenches. The pressure is over 1000 times standard atmospheric
+                    pressure at sea level. Life here is sparse but specialized, with organisms adapted to extreme
+                    conditions.</p>
                 <p><strong>Marine Life:</strong> Snailfish, amphipods, foraminifera, and extremophile bacteria</p>
             </div>
         </div>
@@ -202,19 +239,23 @@
         <div class="facts-slider">
             <div class="fact-slide active">
                 <div class="fact-icon"><i class="fas fa-water"></i></div>
-                <div class="fact-text">The ocean produces over half of the world's oxygen and absorbs 50 times more carbon dioxide than our atmosphere.</div>
+                <div class="fact-text">The ocean produces over half of the world's oxygen and absorbs 50 times more
+                    carbon dioxide than our atmosphere.</div>
             </div>
             <div class="fact-slide">
                 <div class="fact-icon"><i class="fas fa-mountain"></i></div>
-                <div class="fact-text">The longest mountain range in the world is underwater—the Mid-Ocean Ridge stretches 65,000 km around the globe.</div>
+                <div class="fact-text">The longest mountain range in the world is underwater—the Mid-Ocean Ridge
+                    stretches 65,000 km around the globe.</div>
             </div>
             <div class="fact-slide">
                 <div class="fact-icon"><i class="fas fa-fish"></i></div>
-                <div class="fact-text">About 91% of marine species have yet to be classified, and more than 80% of the ocean is unmapped and unobserved.</div>
+                <div class="fact-text">About 91% of marine species have yet to be classified, and more than 80% of the
+                    ocean is unmapped and unobserved.</div>
             </div>
             <div class="fact-slide">
                 <div class="fact-icon"><i class="fas fa-temperature-low"></i></div>
-                <div class="fact-text">The ocean's deepest point is the Mariana Trench at nearly 11,000 meters—deeper than Mount Everest is tall.</div>
+                <div class="fact-text">The ocean's deepest point is the Mariana Trench at nearly 11,000 meters—deeper
+                    than Mount Everest is tall.</div>
             </div>
         </div>
     </section>
@@ -226,38 +267,50 @@
             <div class="action-card fade-in">
                 <div class="action-icon">♻️</div>
                 <h3>Reduce Plastic Use</h3>
-                <p>Switch to reusable bags, bottles, and containers. Avoid single-use plastics that often end up in our oceans.</p>
-                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Action Tips</button>
+                <p>Switch to reusable bags, bottles, and containers. Avoid single-use plastics that often end up in our
+                    oceans.</p>
+                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Action
+                    Tips</button>
             </div>
             <div class="action-card fade-in">
                 <div class="action-icon">🐟</div>
                 <h3>Choose Sustainable Seafood</h3>
-                <p>Support sustainable fishing practices by choosing certified sustainable seafood and avoiding overfished species.</p>
-                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Seafood Guide</button>
+                <p>Support sustainable fishing practices by choosing certified sustainable seafood and avoiding
+                    overfished species.</p>
+                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Seafood
+                    Guide</button>
             </div>
             <div class="action-card fade-in">
                 <div class="action-icon">🏖️</div>
                 <h3>Beach Cleanups</h3>
-                <p>Participate in local beach cleanup events or organize your own to remove harmful debris from coastal areas.</p>
-                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Find Events</button>
+                <p>Participate in local beach cleanup events or organize your own to remove harmful debris from coastal
+                    areas.</p>
+                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Find
+                    Events</button>
             </div>
             <div class="action-card fade-in">
                 <div class="action-icon">💡</div>
                 <h3>Reduce Carbon Footprint</h3>
-                <p>Lower your carbon emissions to help combat ocean acidification and climate change impacts on marine life.</p>
-                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Calculate Footprint</button>
+                <p>Lower your carbon emissions to help combat ocean acidification and climate change impacts on marine
+                    life.</p>
+                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Calculate
+                    Footprint</button>
             </div>
             <div class="action-card fade-in">
                 <div class="action-icon">🗳️</div>
                 <h3>Support Ocean Policies</h3>
-                <p>Vote for leaders who prioritize ocean conservation and support legislation protecting marine ecosystems.</p>
-                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Current Policies</button>
+                <p>Vote for leaders who prioritize ocean conservation and support legislation protecting marine
+                    ecosystems.</p>
+                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Current
+                    Policies</button>
             </div>
             <div class="action-card fade-in">
                 <div class="action-icon">💰</div>
                 <h3>Donate & Volunteer</h3>
-                <p>Support marine conservation organizations through donations, volunteering, or participating in citizen science projects.</p>
-                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Get Involved</button>
+                <p>Support marine conservation organizations through donations, volunteering, or participating in
+                    citizen science projects.</p>
+                <button class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Get
+                    Involved</button>
             </div>
         </div>
     </section>
@@ -279,26 +332,34 @@
             <div class="org-card fade-in">
                 <div class="org-logo">🌊</div>
                 <h3>Ocean Conservancy</h3>
-                <p>Working to protect the ocean from today's greatest global challenges through science-based solutions for a healthy ocean and wildlife.</p>
-                <a href="#" class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Visit Website</a>
+                <p>Working to protect the ocean from today's greatest global challenges through science-based solutions
+                    for a healthy ocean and wildlife.</p>
+                <a href="#" class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Visit
+                    Website</a>
             </div>
             <div class="org-card fade-in">
                 <div class="org-logo">🐋</div>
                 <h3>WWF Ocean</h3>
-                <p>World Wildlife Fund's ocean conservation programs focus on sustainable fisheries, marine protected areas, and climate change solutions.</p>
-                <a href="#" class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Visit Website</a>
+                <p>World Wildlife Fund's ocean conservation programs focus on sustainable fisheries, marine protected
+                    areas, and climate change solutions.</p>
+                <a href="#" class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Visit
+                    Website</a>
             </div>
             <div class="org-card fade-in">
                 <div class="org-logo">🏛️</div>
                 <h3>NOAA Fisheries</h3>
-                <p>U.S. federal agency responsible for the stewardship of national marine resources through scientific research and management.</p>
-                <a href="#" class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Visit Website</a>
+                <p>U.S. federal agency responsible for the stewardship of national marine resources through scientific
+                    research and management.</p>
+                <a href="#" class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Visit
+                    Website</a>
             </div>
             <div class="org-card fade-in">
                 <div class="org-logo">🌍</div>
                 <h3>Greenpeace Oceans</h3>
-                <p>Campaigning for ocean sanctuaries, sustainable fishing practices, and protection from plastic pollution and climate change.</p>
-                <a href="#" class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Visit Website</a>
+                <p>Campaigning for ocean sanctuaries, sustainable fishing practices, and protection from plastic
+                    pollution and climate change.</p>
+                <a href="#" class="cta-button" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Visit
+                    Website</a>
             </div>
         </div>
     </section>
@@ -336,30 +397,36 @@
                 <p>Phone: +91 9999730618</p>
                 <p>Address: Kalka Ji, New Delhi</p>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/p/Zeesu-Royalist-100064169071412/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/p/Zeesu-Royalist-100064169071412/"><i
+                            class="fab fa-facebook-f"></i></a>
                     <a href="https://x.com/zeesuroyalist"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.instagram.com/zeesu_royalist/"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.youtube.com/@zeesu_royalist"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Blue Depth. All rights reserved.</p>
-            <p style="margin-top: 10px; font-style: italic; font-size: 12px;;">Powered by The Zeesu Royalist Company</p>
+            <p style="margin-top:10px;font-style:italic;font-size:10px;color:#ffffff;">
+                Powered by The
+                <a href="https://www.google.com/search?q=zeesu+royalist" style="text-decoration:none;color:#ffffff;">
+                    Zeesu Royalist Company
+                </a>
+            </p>
         </div>
     </footer>
 
-    <!-- Species Detail Modal -->
     <div id="speciesModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <div id="modalContent">
-                <!-- Content will be dynamically loaded -->
             </div>
         </div>
     </div>
 
-<script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
+
 </html>
